@@ -14,5 +14,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "nodemon": "^3.0.2"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.0"
   }
 }
