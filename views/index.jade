@@ -2,12 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Welcome!
+  p Welcome to the mini message board, feel free to post a message!
   p
     a(href='/new') Post a message
   each msg in messages
     div.message
-      h1 Message from #{msg.user}
-      p #{msg.text}
+      h2 From #{msg.user}
+      p Message: #{msg.text}
       small Posted on #{msg.added}
 

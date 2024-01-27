@@ -2,15 +2,14 @@ extends layout
 
 block content 
   h1= title 
-  p New Post: 
-  form(action='/new', method='post') 
+  form(action='/new' method='post') 
     div 
-      label(for='user') User: 
-      input#user(type='text', name='user') 
+      label(for='user') User
+      input#user(type='text' name='user') 
     div 
-      label(for='text') Text: 
+      label(for='text') Text
       textarea#text(name='text') 
     div 
-      input(type='submit', value='Post') 
+      button(type='submit') Post Message
   p 
-    a(href='/') Back
+    a#backbtn(href='/') Back
